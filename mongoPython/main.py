@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import datetime 
 
 
-cluster = "mongodb+srv://sunny:sunny@cluster0.1krhqqx.mongodb.net/test?retryWrites=true&w=majority"
+cluster = "mongodb+srv://<username>:<password>@cluster0.1krhqqx.mongodb.net/test?retryWrites=true&w=majority"
 client = MongoClient(cluster)
 
 print(client.list_database_names())
